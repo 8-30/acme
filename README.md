@@ -47,4 +47,4 @@ The functional structure of the program was modeled using the c4 model component
 For exercise development first I read the problem carefully until I found a possible solution, then I translated the solution in pseudo code to check if it would be useful, once my solution was verified I proceeded to design the component diagram and finally assemble the project structure and implement the solution.
 
 I Manage all my tasks using a proyect within the github repository created for the exercise.
-![Tasks](docs/tasks.jpg)
+![Tasks](docs/tasks.png)
