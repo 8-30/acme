@@ -36,6 +36,21 @@ ASTRID=MO10:00-12:00,TH12:00-14:00,SU20:00-21:00
 OUTPUT:
 RENE-ASTRID: 3
 
+## Installation
+
+this program requires [Node.js](https://nodejs.org/) to run.
+
+Clone the project:
+```sh
+git clone https://github.com/8-30/acme.git
+```
+
+Install the dependencies and devDependencies and start the server.
+```sh
+cd acme
+npm install
+npm start
+```
 
 ## Arquitecture
 
