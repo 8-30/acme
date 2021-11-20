@@ -1,0 +1,23 @@
+{
+    "name": "ioet_exercise",
+    "version": "1.0.0",
+    "description": "ACME",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/8-30/acme.git"
+    },
+    "author": "Daniel Lopez",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/8-30/acme/issues"
+    },
+    "homepage": "https://github.com/8-30/acme#readme",
+    "devDependencies": {
+        "jest": "^27.3.1"
+    }
+}
