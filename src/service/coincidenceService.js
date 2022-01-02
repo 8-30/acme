@@ -3,8 +3,8 @@
 // Declaration of modules
 const globals = require("../utils/global.js");
 const Employee = require("../models/employee.js");
-const WorkSchedule = require("../models/WorkSchedule.js");
 const utils = require("../utils/utils.js");
+const WorkSchedule = require("../models/workSchedule.js");
 
 /**
  * creates an instance of the Employee object
