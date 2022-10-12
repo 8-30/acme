@@ -8,12 +8,12 @@ const { createEmployee, showEmployeeCoincideNumber } = require("../service/coinc
  * load the employees registered in the txt.  
  * @param {String} data The employee data txt
  */
-exports.getEmployeeCoincidence = (data) => {
+exports.getEmployees = (data) => {
     let employees = [];
     if (this.isValidData(data)) {
         let employeesData = this.splitDataEmployees(data);
-        employeesData.forEach(element => {
-            let employee = createEmployee(element);
+        employeesData.forEach(employeeData => {
+            let employee = createEmployee(employeeData);
             employees.push(employee);
         });
         return employees;
@@ -41,12 +41,13 @@ exports.isValidData = (data) => {
  * @returns {Array<String>} split employee data
  */
 exports.splitDataEmployees = (data) => {
+    data = data.replace(' ','')
     return data.match(globals.regExpEmployee);
 }
 
 /**
  * calculate how often employees registered in the txt have coincided in the office.  
  */
-exports.print = (employees) => {
+exports.printEnployeeCoincidence = (employees) => {
     showEmployeeCoincideNumber(employees);
 }
