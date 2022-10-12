@@ -1,6 +1,5 @@
 "use strict";
 
-const globals = require("../utils/global.js");
 const dayList = ["SU", "MO", "TU", "WE", "TH", "FR", "SA"];
 
 exports.buildDate = (day, time) => {
