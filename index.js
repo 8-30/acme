@@ -3,7 +3,7 @@
 // Declaration of modules
 const readline = require('readline');
 const fs = require('fs');
-const { getEmployeeCoincidence, print } = require('./src/controller/employeeController');
+const { getEmployees, printEnployeeCoincidence} = require('./src/controller/employeeController');
 
 // Creates the interface for reading data
 var readInterface = readline.createInterface({
@@ -24,10 +24,11 @@ readInterface.question("Please enter the file path(default: test/employees.txt) 
             throw err;
         }
 
-        //Call the function to calculate how often employees registered in the txt have coincided in the office.
-        const employees = getEmployeeCoincidence(data);
+        //Call the function to get data of Employees registered in the txt 
+        const employees = getEmployees(data);
         if (employees != null) {
-            print(employees);
+            //Call the function to calculate how often employees have coincided in the office.
+            printEnployeeCoincidence(employees);
         }
         readInterface.close();
     });
